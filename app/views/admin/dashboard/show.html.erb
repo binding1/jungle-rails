@@ -1,2 +1,14 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Dashboard</h1>
+
+<div class="card">
+  <div class="card-body">
+Product count:
+<%= link_to @product.count, "/admin/products" %>
+</div>
+</div>
+<div class="card">
+  <div class="card-body">
+Category count:
+<%= link_to @category.count, "/admin/products" %>
+</div>
+</div>
